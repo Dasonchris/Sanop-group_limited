@@ -1,0 +1,17 @@
+/* Footer.css: Core styles for footer segments and social transitions */
+
+.footer-social-link {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-social-link:hover {
+  transform: translateY(-2px);
+}
+
+.footer-btn-link {
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-btn-link:hover {
+  padding-left: 2px;
+}

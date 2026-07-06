@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Rubik', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Fraunces', serif;
+
+  --color-brand-green: #0d4615;
+  --color-brand-green-hover: #08340d;
+  --color-brand-beige: #efe8dc;
+  --color-brand-beige-light: #fcfbfa;
+  --color-brand-gold: #a87b50;
+  --color-brand-gold-hover: #8b6542;
+  --color-brand-dark: #0e141a;
+  --color-brand-charcoal: #1d262f;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-beige-light);
+  color: var(--color-brand-dark);
+}
+
+/* 
+  ##Device = Desktops  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .adaptive-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .adaptive-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+  .adaptive-heading-1 {
+    font-size: 3.75rem;
+    line-height: 1.1;
+  }
+  .adaptive-heading-2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .adaptive-section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .adaptive-container {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .adaptive-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  .adaptive-heading-1 {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+  .adaptive-heading-2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+  .adaptive-section-padding {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .adaptive-container {
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .adaptive-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  .adaptive-heading-1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .adaptive-heading-2 {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+  .adaptive-section-padding {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .adaptive-container {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .adaptive-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  .adaptive-heading-1 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+  }
+  .adaptive-heading-2 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+  .adaptive-section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .adaptive-container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .adaptive-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .adaptive-heading-1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+  .adaptive-heading-2 {
+    font-size: 1.65rem;
+    line-height: 1.3;
+  }
+  .adaptive-section-padding {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+  .adaptive-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .adaptive-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .adaptive-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+  .adaptive-heading-1 {
+    font-size: 1.85rem;
+    line-height: 1.25;
+  }
+  .adaptive-heading-2 {
+    font-size: 1.45rem;
+    line-height: 1.3;
+  }
+  .adaptive-section-padding {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .adaptive-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Custom scrollbar to match the organic, rich look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f5f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3baa8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a87b50;
+}

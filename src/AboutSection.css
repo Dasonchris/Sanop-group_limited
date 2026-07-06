@@ -1,0 +1,37 @@
+/* AboutSection.css: Dedicated styles for the About Us chapter of Sanop Group */
+
+.about-blur-shape-1 {
+  position: absolute;
+  top: 2.5rem;
+  right: 0px;
+  width: 24rem;
+  height: 24rem;
+  background-color: rgba(13, 70, 21, 0.05); /* brand-green with opacity */
+  border-radius: 9999px;
+  filter: blur(48px);
+  pointer-events: none;
+}
+
+.about-blur-shape-2 {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0px;
+  width: 18rem;
+  height: 18rem;
+  background-color: rgba(168, 123, 80, 0.05); /* brand-gold with opacity */
+  border-radius: 9999px;
+  filter: blur(48px);
+  pointer-events: none;
+}
+
+.founder-card {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-4px);
+}
+
+.modal-backdrop-blur {
+  backdrop-filter: blur(4px);
+}

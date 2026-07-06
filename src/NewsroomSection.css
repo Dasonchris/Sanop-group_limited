@@ -1,0 +1,18 @@
+/* NewsroomSection.css: Layout style sheets for news articles carousel */
+
+.newsroom-carousel-track::-webkit-scrollbar {
+  display: none; /* Hide scrollbars securely across Webkit engines */
+}
+
+.newsroom-carousel-track {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.news-card-wrapper {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.news-card-wrapper:hover {
+  transform: translateY(-2px);
+}

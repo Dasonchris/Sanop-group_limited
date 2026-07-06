@@ -1,0 +1,149 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_default",
+      "email": "admin@sanop-group",
+      "passwordHash": "f4f9aa65e191cbbf08658f83ccda1ed62f48208fb1a6ca97308df4af263992581bcf5e392c1af8c5ca4fb881e703d8dc6de633c3a2466a866e132fc0014e4972",
+      "passwordSalt": "e2fa85707045d3a260d96863ac1081f8",
+      "pinHash": "ec623d9329df9ee7c141f0e8b46365630d4d35dedea59516827f179f2439cd375d62a4bf51e2188aeba369bccfbd8637593ce6338ff0fba7aba1c9e895ff68d9",
+      "pinSalt": "3201955c01a364db57adbfa3402f1b50",
+      "fullName": "Sanop Group Administrator",
+      "phone": "+233 24 000 0000",
+      "role": "admin",
+      "isVerified": true,
+      "region": "Ecosystem Operations Center",
+      "secretQuestion": "What is the capital of Ghana?",
+      "secretAnswerHash": "68d75e0d288d307ee520461c26904517.4b3b8a39a2669ce8bd41a68aa91c2d019f9517a31dcebd668adac689b36ed46f40a937e8521f18587407dbe014ac53d6f8e28a19c7b92d38755b03081013f72f",
+      "pinResetRequested": false,
+      "createdAt": "2026-06-26T10:46:53.774Z",
+      "updatedAt": "2026-06-26T10:46:53.775Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_8e262ce1ef1cf21c",
+      "userId": "usr_admin_default",
+      "customerName": "Test Customer",
+      "customerEmail": "testcustomer@example.com",
+      "items": [
+        {
+          "id": "prod1",
+          "name": "Organic Seed",
+          "price": 15.99,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 31.98,
+      "deliveryFee": 0,
+      "total": 31.98,
+      "momoPhone": "0244000000",
+      "momoReference": "TX987654321",
+      "createdAt": "2026-07-01T12:06:40.833Z"
+    }
+  ],
+  "consultations": [
+    {
+      "id": "cns_61375c5ec6ef635a",
+      "userId": null,
+      "name": "Test User",
+      "email": "test@example.com",
+      "phone": "0244000000",
+      "scope": "full-cellular",
+      "date": "2026-12-01",
+      "createdAt": "2026-07-01T10:41:43.752Z"
+    },
+    {
+      "id": "cns_346b313fcde52afd",
+      "userId": "usr_admin_default",
+      "name": "Test User",
+      "email": "test@example.com",
+      "phone": "0244000000",
+      "scope": "full-cellular",
+      "date": "2026-12-01",
+      "createdAt": "2026-07-01T12:04:16.932Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_b76d2f47f12a8abb",
+      "timestamp": "2026-07-01T23:13:15.973Z",
+      "userId": "usr_admin_default",
+      "userEmail": "admin@sanop-group",
+      "ip": "127.0.0.1",
+      "action": "LOGIN_SUCCESS",
+      "details": "Successfully authorized session."
+    },
+    {
+      "id": "log_6213312a31b61631",
+      "timestamp": "2026-07-01T12:06:41.151Z",
+      "userId": "usr_admin_default",
+      "userEmail": "testcustomer@example.com",
+      "ip": "127.0.0.1",
+      "action": "ORDER_PLACED",
+      "details": "Constructed biological dispatch order of 1 items. Total value: $31.98"
+    },
+    {
+      "id": "log_01c3e62df3c78e5f",
+      "timestamp": "2026-07-01T12:06:37.857Z",
+      "userId": "usr_admin_default",
+      "userEmail": "admin@sanop-group",
+      "ip": "127.0.0.1",
+      "action": "LOGIN_SUCCESS",
+      "details": "Successfully authorized session."
+    },
+    {
+      "id": "log_b7efb574c54f22fd",
+      "timestamp": "2026-07-01T12:04:16.941Z",
+      "userId": "usr_admin_default",
+      "userEmail": "admin@sanop-group",
+      "ip": "127.0.0.1",
+      "action": "DIAGNOSTIC_CONSULTATION_BOOKED",
+      "details": "Diagnostics scheduled for 2026-12-01. Target: full-cellular"
+    },
+    {
+      "id": "log_7ebdf91f5bce599d",
+      "timestamp": "2026-07-01T12:04:15.971Z",
+      "userId": "usr_admin_default",
+      "userEmail": "admin@sanop-group",
+      "ip": "127.0.0.1",
+      "action": "LOGIN_SUCCESS",
+      "details": "Successfully authorized session."
+    },
+    {
+      "id": "log_9dad7f6e48546f37",
+      "timestamp": "2026-07-01T10:41:43.776Z",
+      "userId": null,
+      "userEmail": "test@example.com",
+      "ip": "127.0.0.1",
+      "action": "DIAGNOSTIC_CONSULTATION_BOOKED",
+      "details": "Diagnostics scheduled for 2026-12-01. Target: full-cellular"
+    },
+    {
+      "id": "log_bc38a226ce24b311",
+      "timestamp": "2026-07-01T10:36:21.126Z",
+      "userId": "usr_admin_default",
+      "userEmail": "admin@sanop-group",
+      "ip": "127.0.0.1",
+      "action": "LOGIN_SUCCESS",
+      "details": "Successfully authorized session."
+    },
+    {
+      "id": "log_06f6fb455b3ce0d7",
+      "timestamp": "2026-07-01T10:35:37.254Z",
+      "userId": "usr_admin_default",
+      "userEmail": "admin@sanop-group",
+      "ip": "127.0.0.1",
+      "action": "LOGIN_SUCCESS",
+      "details": "Successfully authorized session."
+    },
+    {
+      "id": "log_e883791f36d03879",
+      "timestamp": "2026-07-01T10:32:33.726Z",
+      "userId": "usr_admin_default",
+      "userEmail": "admin@sanop-group",
+      "ip": "127.0.0.1",
+      "action": "LOGIN_SUCCESS",
+      "details": "Successfully authorized session."
+    }
+  ]
+}

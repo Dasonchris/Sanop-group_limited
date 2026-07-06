@@ -1,0 +1,6 @@
+{
+  "name": "Sanop Group Ecosystem",
+  "description": "Interactive landing page and ecosystem hub for Sanop Group, promoting regenerative organic agriculture, conscious beauty, and nature-based healthcare in Ghana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,94 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Represents an ecosystem member or administrator in Sanop Group.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "passwordHash": { "type": "string" },
+        "passwordSalt": { "type": "string" },
+        "pinHash": { "type": "string" },
+        "pinSalt": { "type": "string" },
+        "fullName": { "type": "string" },
+        "phone": { "type": "string" },
+        "role": { "type": "string" },
+        "isVerified": { "type": "boolean" },
+        "region": { "type": "string" },
+        "secretQuestion": { "type": "string" },
+        "secretAnswerHash": { "type": "string" },
+        "pinResetRequested": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "email", "passwordHash", "passwordSalt", "pinHash", "pinSalt", "fullName", "phone", "role", "isVerified", "region", "secretQuestion", "secretAnswerHash", "pinResetRequested", "createdAt", "updatedAt"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Represents a purchase of biological skincare or organic harvest goods.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "customerName": { "type": "string" },
+        "customerEmail": { "type": "string" },
+        "items": { "type": "array" },
+        "subtotal": { "type": "number" },
+        "deliveryFee": { "type": "number" },
+        "total": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "customerName", "customerEmail", "items", "subtotal", "deliveryFee", "total", "createdAt"]
+    },
+    "Consultation": {
+      "title": "Consultation",
+      "description": "Represents a scheduled herbal or cosmetic diagnostics consultation.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "scope": { "type": "string" },
+        "date": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "phone", "scope", "date", "createdAt"]
+    },
+    "AuditLog": {
+      "title": "AuditLog",
+      "description": "Represents a security and system integrity log event record.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "userId": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "ip": { "type": "string" },
+        "action": { "type": "string" },
+        "details": { "type": "string" }
+      },
+      "required": ["id", "timestamp", "ip", "action", "details"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "User",
+      "description": "Members profiles registry."
+    },
+    "orders": {
+      "schema": "Order",
+      "description": "Ecosystem transactions and fulfillment orders."
+    },
+    "consultations": {
+      "schema": "Consultation",
+      "description": "Booked diagnostics consulting slots."
+    },
+    "logs": {
+      "schema": "AuditLog",
+      "description": "Audit security trails logs for admin tracking."
+    }
+  }
+}

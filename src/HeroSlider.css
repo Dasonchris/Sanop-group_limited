@@ -1,0 +1,31 @@
+/* HeroSlider.css: Dedicated styles for the beautiful hero slider component */
+
+.hero-slider-container {
+  position: relative;
+  height: 90vh;
+  min-height: 600px;
+  overflow: hidden;
+  background-color: var(--color-brand-dark);
+}
+
+.hero-slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 10s ease-out;
+}
+
+.hero-slide-bg-active {
+  transform: scale(1.05);
+}
+
+.hero-control-dot {
+  height: 0.5rem;
+  border-radius: 9999px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-control-dot-active {
+  width: 2.5rem;
+}
